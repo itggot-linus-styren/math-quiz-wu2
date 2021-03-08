@@ -1,9 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <h1>Math Quiz app</h1>
-  <OperatorQuiz />
+  <OperatorQuiz :operator="operator" />
   <OperatorSelector />
-  <p>{{ operator }}</p>
 </template>
 
 <script>
