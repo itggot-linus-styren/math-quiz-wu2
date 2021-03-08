@@ -1,6 +1,8 @@
 <template>
-  <p>{{ operator }}</p>
-  <button>Back</button>
+  <div>
+    <p>{{ operator }}</p>
+    <button>Back</button>
+  </div>
 </template>
 
 <script>
