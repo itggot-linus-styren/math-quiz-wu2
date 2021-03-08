@@ -1,26 +1,21 @@
 <template>
-  <button @click="operator = '+'">
+  <button @click="$parent.operator = '+'">
     Addition +
   </button>
-  <button @click="operator = '-'">
+  <button @click="$parent.operator = '-'">
     Subtraktion -
   </button>
-  <button @click="operator = '/'">
+  <button @click="$parent.operator = '/'">
     Division /
   </button>
-  <button @click="operator = '*'">
+  <button @click="$parent.operator = '*'">
     Multiplikation *
   </button>
 </template>
 
 <script>
 export default {
-  name: "OperatorSelector",
-  data() {
-    return {
-      operator: null
-    };
-  }
+  name: "OperatorSelector"
 };
 </script>
 

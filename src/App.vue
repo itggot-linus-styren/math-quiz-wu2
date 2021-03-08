@@ -3,6 +3,7 @@
   <h1>Math Quiz app</h1>
   <OperatorQuiz />
   <OperatorSelector />
+  <p>{{ operator }}</p>
 </template>
 
 <script>
@@ -11,6 +12,11 @@ import OperatorQuiz from "./components/OperatorQuiz.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      operator: null
+    };
+  },
   components: { OperatorSelector, OperatorQuiz }
 };
 </script>
