@@ -1,8 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <h1>Math Quiz app</h1>
-  <OperatorQuiz :operator="operator" />
-  <OperatorSelector @changeOperator="onChangeOperator" />
+  <OperatorQuiz :operator="operator" v-show="operator" />
+  <OperatorSelector @changeOperator="onChangeOperator" v-show="!operator" />
 </template>
 
 <script>
