@@ -2,7 +2,7 @@
   <img alt="Vue logo" src="./assets/logo.png" />
   <h1>Math Quiz app</h1>
   <OperatorQuiz :operator="operator" />
-  <OperatorSelector />
+  <OperatorSelector @changeOperator="onChangeOperator" />
 </template>
 
 <script>
@@ -15,6 +15,11 @@ export default {
     return {
       operator: null
     };
+  },
+  methods: {
+    onChangeOperator(operator) {
+      this.operator = operator;
+    }
   },
   components: { OperatorSelector, OperatorQuiz }
 };
