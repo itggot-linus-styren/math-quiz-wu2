@@ -1,5 +1,16 @@
 <template>
-  <button>+</button>
+  <button>
+    Addition +
+  </button>
+  <button>
+    Subtraktion -
+  </button>
+  <button>
+    Division /
+  </button>
+  <button>
+    Multiplikation *
+  </button>
 </template>
 
 <script>
