@@ -1,16 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <h1>Math Quiz app</h1>
+  <button>+</button>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
+  name: "App"
 };
 </script>
 
