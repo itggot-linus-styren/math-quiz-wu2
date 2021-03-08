@@ -1,12 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <h1>Math Quiz app</h1>
-  <button>+</button>
+  <OperatorQuiz />
+  <OperatorSelector />
 </template>
 
 <script>
+import OperatorSelector from "./components/OperatorSelector.vue";
+import OperatorQuiz from "./components/OperatorQuiz.vue";
+
 export default {
-  name: "App"
+  name: "App",
+  components: { OperatorSelector, OperatorQuiz }
 };
 </script>
 
