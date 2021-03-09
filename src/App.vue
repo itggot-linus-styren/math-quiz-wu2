@@ -26,7 +26,10 @@ export default {
   methods: {
     onChangeOperator(operator) {
       this.operator = operator;
-      this.$refs.quiz.startQuiz();
+
+      setTimeout(() => {
+        this.$refs.quiz.startQuiz();
+      }, 1);
     },
     onClearOperator() {
       this.operator = null;
