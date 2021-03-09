@@ -43,7 +43,10 @@ export default {
         ];
       }
 
-      /* 4. Blanda svaren */
+      /* 4. Blanda svaren, vi förenklar detta genom att ersätta
+            ett av de felaktiga svaren med det som är korrekt. */
+      const randIndex = Math.floor(Math.random() * this.answers.length);
+      this.answers[randIndex] = this.expectedAnswer;
     }
   },
   created() {
