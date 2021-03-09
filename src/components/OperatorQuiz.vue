@@ -4,7 +4,11 @@
     <p>{{ operandLeft }} {{ operator }} {{ operandRight }}</p>
 
     <!-- Visa svarsalternativen för användaren -->
-    <button v-for="(answer, index) of answers" :key="index">
+    <button
+      v-for="(answer, index) of answers"
+      :key="index"
+      @click="selectAnswer(answer)"
+    >
       {{ answer }}
     </button>
 
@@ -27,6 +31,9 @@ export default {
     };
   },
   methods: {
+    selectAnswer(answer) {
+      alert("You chose " + answer);
+    },
     startQuiz() {
       /* Quiz logik stegvis */
       /* 1. Slumpa två operander */
