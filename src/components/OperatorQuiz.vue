@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>{{ operator }}</p>
-    <button>Back</button>
+    <button @click="$emit('clearOperator')">Back</button>
   </div>
 </template>
 

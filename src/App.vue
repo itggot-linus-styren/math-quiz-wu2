@@ -2,7 +2,11 @@
   <div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <h1>Math Quiz app</h1>
-    <OperatorQuiz :operator="operator" v-show="operator" />
+    <OperatorQuiz
+      @clearOperator="onClearOperator"
+      :operator="operator"
+      v-show="operator"
+    />
     <OperatorSelector @changeOperator="onChangeOperator" v-show="!operator" />
   </div>
 </template>
@@ -21,6 +25,9 @@ export default {
   methods: {
     onChangeOperator(operator) {
       this.operator = operator;
+    },
+    onClearOperator() {
+      this.operator = null;
     }
   },
   components: { OperatorSelector, OperatorQuiz }
