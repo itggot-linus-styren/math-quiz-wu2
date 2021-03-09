@@ -2,6 +2,10 @@
   <div>
     <!-- Visa uttrycket genom att interpolera operanderna och operatorn -->
     <p>{{ operandLeft }} {{ operator }} {{ operandRight }}</p>
+
+    <!-- Visa svarsalternativen för användaren -->
+    <button v-for="answer in answers">{{ answer }}</button>
+
     <button @click="$emit('clearOperator')">Back</button>
   </div>
 </template>
