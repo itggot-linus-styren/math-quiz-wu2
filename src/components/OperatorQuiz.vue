@@ -32,7 +32,9 @@ export default {
   },
   methods: {
     selectAnswer(answer) {
-      alert("You chose " + answer);
+      if (answer != this.expectedAnswer) {
+        alert("Wrong! It was: " + this.expectedAnswer);
+      }
     },
     startQuiz() {
       /* Quiz logik stegvis */
