@@ -27,8 +27,13 @@ export default {
       this.operandLeft = Math.floor(Math.random() * 13);
       this.operandRight = Math.floor(Math.random() * 13);
 
-      /* 2. Beräkna korrekt svar */
-      /* 3. Generera felaktiga svar */
+      if (this.operator == "+") {
+        /* 2. Beräkna korrekt svar */
+        this.expectedAnswer = this.operandLeft + this.operandRight;
+
+        /* 3. Generera felaktiga svar */
+      }
+
       /* 4. Blanda svaren */
     }
   },
