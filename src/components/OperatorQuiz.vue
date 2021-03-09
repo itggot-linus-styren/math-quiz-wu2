@@ -4,7 +4,9 @@
     <p>{{ operandLeft }} {{ operator }} {{ operandRight }}</p>
 
     <!-- Visa svarsalternativen för användaren -->
-    <button v-for="answer in answers">{{ answer }}</button>
+    <button v-for="(answer, index) of answers" :key="index">
+      {{ answer }}
+    </button>
 
     <button @click="$emit('clearOperator')">Back</button>
   </div>
