@@ -34,6 +34,13 @@ export default {
         this.expectedAnswer = this.operandLeft + this.operandRight;
 
         /* 3. Generera felaktiga svar */
+        this.answers = [
+          this.operandLeft + this.operandRight + 1,
+          this.operandLeft + this.operandRight + 2,
+          this.operandLeft + this.operandRight + 3,
+          this.operandLeft + this.operandRight - 1,
+          this.operandLeft + this.operandRight - 2
+        ];
       }
 
       /* 4. Blanda svaren */
