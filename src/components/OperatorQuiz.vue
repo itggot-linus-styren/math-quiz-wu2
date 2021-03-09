@@ -27,6 +27,8 @@ export default {
       this.operandLeft = Math.floor(Math.random() * 13);
       this.operandRight = Math.floor(Math.random() * 13);
 
+      console.log("Operatorns värde:");
+      console.log(this.operator);
       if (this.operator == "+") {
         /* 2. Beräkna korrekt svar */
         this.expectedAnswer = this.operandLeft + this.operandRight;
