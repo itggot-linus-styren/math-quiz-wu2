@@ -35,6 +35,8 @@ export default {
       if (answer != this.expectedAnswer) {
         alert("Wrong! It was: " + this.expectedAnswer);
       }
+
+      this.startQuiz();
     },
     startQuiz() {
       /* Quiz logik stegvis */
