@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <h1>Math Quiz app</h1>
     <OperatorQuiz
+      ref="quiz"
       @clearOperator="onClearOperator"
       :operator="operator"
       v-show="operator"
@@ -25,6 +26,7 @@ export default {
   methods: {
     onChangeOperator(operator) {
       this.operator = operator;
+      this.$refs.quiz.startQuiz();
     },
     onClearOperator() {
       this.operator = null;
