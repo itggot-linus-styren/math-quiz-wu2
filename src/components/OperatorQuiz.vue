@@ -19,6 +19,15 @@ export default {
       answers: [],
       expectedAnswer: null
     };
+  },
+  methods: {
+    startQuiz() {
+      /* Quiz logik stegvis */
+      /* 1. Slumpa två operander */
+      /* 2. Beräkna korrekt svar */
+      /* 3. Generera felaktiga svar */
+      /* 4. Blanda svaren */
+    }
   }
 };
 </script>
