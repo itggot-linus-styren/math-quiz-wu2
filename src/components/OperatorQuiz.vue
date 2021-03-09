@@ -24,9 +24,9 @@ export default {
     startQuiz() {
       /* Quiz logik stegvis */
       /* 1. Slumpa två operander */
-      this.operandLeft = Math.random() * 13;
-      this.operandRight = Math.random() * 13;
-      
+      this.operandLeft = Math.floor(Math.random() * 13);
+      this.operandRight = Math.floor(Math.random() * 13);
+
       /* 2. Beräkna korrekt svar */
       /* 3. Generera felaktiga svar */
       /* 4. Blanda svaren */
